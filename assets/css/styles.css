@@ -1138,3 +1138,26 @@ img {
 .payment__logo img:hover {
   transform: scale(1.05);
 }
+
+/* Carousel height responsive */
+#carouselSitarina {
+  max-height: 80vh;
+  overflow: hidden;
+}
+
+#carouselSitarina img {
+  object-fit: cover;
+  height: 80vh;
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  #carouselSitarina img {
+    height: 45vh;
+  }
+
+  .carousel-caption .button {
+    font-size: 0.875rem;
+    padding: 0.5rem 1.5rem;
+  }
+}
